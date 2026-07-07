@@ -45,7 +45,7 @@ Replyn/
 │   └── health.py             #  GET  /health
 │
 ├── extension/                 # PRODUCT: the Gmail Chrome extension (floating "AI" button)
-├── site/index.html            # landing page (features + setup)
+├── index.html                 # landing page (served at / by Vercel)
 ├── vercel.json                # one deploy: static site + api functions
 ├── README.md                  # you are here
 └── EXTENSION_SETUP.md          # how to run the extension end-to-end
@@ -228,7 +228,7 @@ leave your machine).
 
 **2. Import the repo at [vercel.com](https://vercel.com)** → New Project → Import.
 Vercel auto-detects `vercel.json`:
-- the landing page is served at `/` (from `site/index.html`),
+- the landing page is served at `/` (from `index.html`),
 - the API is served at `/suggest` and `/health` (from `api/suggest.py`, `api/health.py`).
 
 **3. Add your key(s)** in Vercel → Project → Settings → Environment Variables:

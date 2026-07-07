@@ -16,7 +16,7 @@ import zipfile
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 EXT_DIR = os.path.join(HERE, "extension")
-OUT_ZIP = os.path.join(HERE, "site", "replyn-extension.zip")
+OUT_ZIP = os.path.join(HERE, "replyn-extension.zip")
 
 # Files we don't want in the shipped zip.
 SKIP_NAMES = {".DS_Store", "make_icons.py"}
