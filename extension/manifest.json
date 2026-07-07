@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Replyn — AI Replies for Gmail",
   "version": "1.0.0",
-  "description": "Replyn drafts customer-support replies inside Gmail, grounded in your team's past answers (RAG). Backed by your own server.",
+  "description": "Replyn drafts customer-support replies inside Gmail, grounded in your team's past answers (RAG).",
   "permissions": ["storage", "activeTab"],
   "host_permissions": [
     "https://mail.google.com/*",
