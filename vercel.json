@@ -1,13 +1,19 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/*.py": {
-      "runtime": "@vercel/python@4.3.0",
-      "includeFiles": "{eval/llm.py,eval/dataset.json,backend/rag.py}"
+  "builds": [
+    { "src": "index.html", "use": "@vercel/static" },
+    { "src": "replyn-extension.zip", "use": "@vercel/static" },
+    {
+      "src": "api/*.py",
+      "use": "@vercel/python",
+      "config": { "includeFiles": "{eval/llm.py,eval/dataset.json,backend/rag.py}" }
     }
-  },
-  "rewrites": [
-    { "source": "/health", "destination": "/api/health" },
-    { "source": "/suggest", "destination": "/api/suggest" }
+  ],
+  "routes": [
+    { "src": "/health", "dest": "/api/health.py" },
+    { "src": "/suggest", "dest": "/api/suggest.py" },
+    { "src": "/replyn-extension.zip", "dest": "/replyn-extension.zip" },
+    { "src": "/", "dest": "/index.html" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
