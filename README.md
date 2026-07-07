@@ -300,3 +300,7 @@ retrieval idea, so the thing that's measured is the thing that ships.
   company's ground truth.
 - **Free-tier rate limits** mean large runs need the built-in pacing/resume; the
   committed JSON outputs let you inspect real results without re-running.
+
+## License
+
+MIT — free to use and modify.
