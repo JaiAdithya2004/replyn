@@ -1,0 +1,323 @@
+{
+  "n_emails": 39,
+  "ranking_accuracy": 0.9829,
+  "good_mean": 0.8683,
+  "bad_mean": 0.2285,
+  "good_vs_bad_separation": 0.6398,
+  "paraphrase_vs_wrong": 0.7307,
+  "passed": true,
+  "per_email": [
+    {
+      "id": "email_001",
+      "category": "INVOICE",
+      "gold": 1.0,
+      "paraphrase": 0.788,
+      "generic": 0.425,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_002",
+      "category": "DELIVERY",
+      "gold": 1.0,
+      "paraphrase": 0.769,
+      "generic": 0.427,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_003",
+      "category": "CONTACT",
+      "gold": 1.0,
+      "paraphrase": 0.771,
+      "generic": 0.369,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_004",
+      "category": "CONTACT",
+      "gold": 1.0,
+      "paraphrase": 0.773,
+      "generic": 0.437,
+      "wrong": 0.004
+    },
+    {
+      "id": "email_005",
+      "category": "SUBSCRIPTION",
+      "gold": 1.0,
+      "paraphrase": 0.778,
+      "generic": 0.439,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_006",
+      "category": "PAYMENT",
+      "gold": 1.0,
+      "paraphrase": 0.799,
+      "generic": 0.364,
+      "wrong": 0.003
+    },
+    {
+      "id": "email_007",
+      "category": "GENERAL",
+      "gold": 1.0,
+      "paraphrase": 0.832,
+      "generic": 0.438,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_008",
+      "category": "CONTACT",
+      "gold": 1.0,
+      "paraphrase": 0.845,
+      "generic": 0.426,
+      "wrong": 0.02
+    },
+    {
+      "id": "email_009",
+      "category": "GENERAL",
+      "gold": 1.0,
+      "paraphrase": 0.757,
+      "generic": 0.448,
+      "wrong": 0.035
+    },
+    {
+      "id": "email_010",
+      "category": "GENERAL",
+      "gold": 1.0,
+      "paraphrase": 0.814,
+      "generic": 0.438,
+      "wrong": 0.149
+    },
+    {
+      "id": "email_011",
+      "category": "INVOICE",
+      "gold": 1.0,
+      "paraphrase": 0.511,
+      "generic": 0.428,
+      "wrong": 0.008
+    },
+    {
+      "id": "email_012",
+      "category": "ORDER",
+      "gold": 1.0,
+      "paraphrase": 0.764,
+      "generic": 0.438,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_013",
+      "category": "REFUND",
+      "gold": 0.65,
+      "paraphrase": 0.795,
+      "generic": 0.39,
+      "wrong": 0.35
+    },
+    {
+      "id": "email_014",
+      "category": "FEEDBACK",
+      "gold": 1.0,
+      "paraphrase": 0.795,
+      "generic": 0.437,
+      "wrong": 0.039
+    },
+    {
+      "id": "email_015",
+      "category": "SHIPPING",
+      "gold": 1.0,
+      "paraphrase": 0.797,
+      "generic": 0.436,
+      "wrong": 0.35
+    },
+    {
+      "id": "email_016",
+      "category": "ACCOUNT",
+      "gold": 0.65,
+      "paraphrase": 0.454,
+      "generic": 0.425,
+      "wrong": 0.004
+    },
+    {
+      "id": "email_017",
+      "category": "REFUND",
+      "gold": 0.65,
+      "paraphrase": 0.774,
+      "generic": 0.43,
+      "wrong": 0.005
+    },
+    {
+      "id": "email_018",
+      "category": "ACCOUNT",
+      "gold": 1.0,
+      "paraphrase": 0.825,
+      "generic": 0.416,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_019",
+      "category": "FEEDBACK",
+      "gold": 0.65,
+      "paraphrase": 0.552,
+      "generic": 0.286,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_020",
+      "category": "FEEDBACK",
+      "gold": 1.0,
+      "paraphrase": 0.779,
+      "generic": 0.444,
+      "wrong": 0.35
+    },
+    {
+      "id": "email_021",
+      "category": "INVOICE",
+      "gold": 1.0,
+      "paraphrase": 0.722,
+      "generic": 0.366,
+      "wrong": 0.008
+    },
+    {
+      "id": "email_022",
+      "category": "CANCEL",
+      "gold": 1.0,
+      "paraphrase": 0.789,
+      "generic": 0.449,
+      "wrong": 0.14
+    },
+    {
+      "id": "email_023",
+      "category": "DELIVERY",
+      "gold": 1.0,
+      "paraphrase": 0.831,
+      "generic": 0.38,
+      "wrong": 0.006
+    },
+    {
+      "id": "email_024",
+      "category": "ORDER",
+      "gold": 1.0,
+      "paraphrase": 0.785,
+      "generic": 0.362,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_025",
+      "category": "SHIPPING",
+      "gold": 1.0,
+      "paraphrase": 0.793,
+      "generic": 0.375,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_026",
+      "category": "PAYMENT",
+      "gold": 1.0,
+      "paraphrase": 0.743,
+      "generic": 0.438,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_027",
+      "category": "PAYMENT",
+      "gold": 1.0,
+      "paraphrase": 0.871,
+      "generic": 0.44,
+      "wrong": 0.007
+    },
+    {
+      "id": "email_028",
+      "category": "SHIPPING",
+      "gold": 1.0,
+      "paraphrase": 0.815,
+      "generic": 0.438,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_029",
+      "category": "ORDER",
+      "gold": 1.0,
+      "paraphrase": 0.794,
+      "generic": 0.459,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_030",
+      "category": "CANCEL",
+      "gold": 1.0,
+      "paraphrase": 0.653,
+      "generic": 0.425,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_031",
+      "category": "DELIVERY",
+      "gold": 1.0,
+      "paraphrase": 0.786,
+      "generic": 0.415,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_032",
+      "category": "CANCEL",
+      "gold": 1.0,
+      "paraphrase": 0.799,
+      "generic": 0.448,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_033",
+      "category": "REFUND",
+      "gold": 1.0,
+      "paraphrase": 0.896,
+      "generic": 0.395,
+      "wrong": 0.002
+    },
+    {
+      "id": "email_034",
+      "category": "SUBSCRIPTION",
+      "gold": 1.0,
+      "paraphrase": 0.837,
+      "generic": 0.429,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_035",
+      "category": "ACCOUNT",
+      "gold": 1.0,
+      "paraphrase": 0.851,
+      "generic": 0.383,
+      "wrong": 0.006
+    },
+    {
+      "id": "email_036",
+      "category": "SHIPPING",
+      "gold": 1.0,
+      "paraphrase": 0.751,
+      "generic": 0.464,
+      "wrong": 0.14
+    },
+    {
+      "id": "email_037",
+      "category": "PAYMENT",
+      "gold": 1.0,
+      "paraphrase": 0.837,
+      "generic": 0.367,
+      "wrong": 0.005
+    },
+    {
+      "id": "email_038",
+      "category": "SUBSCRIPTION",
+      "gold": 1.0,
+      "paraphrase": 0.749,
+      "generic": 0.413,
+      "wrong": 0.0
+    },
+    {
+      "id": "email_039",
+      "category": "ORDER",
+      "gold": 1.0,
+      "paraphrase": 0.854,
+      "generic": 0.413,
+      "wrong": 0.0
+    }
+  ]
+}

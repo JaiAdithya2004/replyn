@@ -1,0 +1,68 @@
+/* Floating "AI" icon (Grammarly-style) anchored to the Gmail reply box,
+   plus a small status bubble that appears above it while working. */
+
+.ai-reply-fab {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  background: linear-gradient(135deg, #7b2ff7 0%, #4a6cf7 100%);
+  box-shadow: 0 2px 8px rgba(60, 30, 120, 0.35);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+.ai-reply-fab:hover {
+  transform: translateY(-1px) scale(1.05);
+  filter: brightness(1.08);
+  box-shadow: 0 4px 12px rgba(60, 30, 120, 0.45);
+}
+
+.ai-reply-fab:active {
+  transform: scale(0.97);
+}
+
+.ai-reply-fab-label {
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+/* spinning state while the AI is generating */
+.ai-reply-fab.loading {
+  pointer-events: none;
+}
+.ai-reply-fab.loading .ai-reply-fab-label {
+  animation: ai-reply-pulse 1s ease-in-out infinite;
+}
+@keyframes ai-reply-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* status bubble above the icon */
+.ai-reply-bubble {
+  position: absolute;
+  bottom: 48px;
+  right: 0;
+  white-space: nowrap;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: #3c4043;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+.ai-reply-bubble[data-kind="ok"] { background: #137333; }
+.ai-reply-bubble[data-kind="err"] { background: #c5221f; }

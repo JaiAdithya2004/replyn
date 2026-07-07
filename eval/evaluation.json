@@ -1,0 +1,583 @@
+{
+  "weights": {
+    "similarity": 0.3,
+    "rubric": 0.7,
+    "rubric_dims": {
+      "helpfulness": 0.3,
+      "correctness": 0.3,
+      "tone": 0.2,
+      "completeness": 0.2
+    }
+  },
+  "overall_score": 0.647,
+  "similarity_mean": 0.2676,
+  "rubric_mean": 0.8096,
+  "rubric_dim_means": {
+    "helpfulness": 4.0,
+    "correctness": 4.3333,
+    "tone": 4.6667,
+    "completeness": 4.0256
+  },
+  "per_category": {
+    "ACCOUNT": 0.6585,
+    "CANCEL": 0.7131,
+    "CONTACT": 0.5484,
+    "DELIVERY": 0.6058,
+    "FEEDBACK": 0.6585,
+    "GENERAL": 0.6592,
+    "INVOICE": 0.6728,
+    "ORDER": 0.7145,
+    "PAYMENT": 0.6366,
+    "REFUND": 0.5984,
+    "SHIPPING": 0.7287,
+    "SUBSCRIPTION": 0.523
+  },
+  "per_response": [
+    {
+      "id": "email_001",
+      "category": "INVOICE",
+      "similarity": 0.2277,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.6808,
+      "rationale": "The draft reply is mostly helpful, accurate, and professional, but lacks a clear next step after confirming the email address."
+    },
+    {
+      "id": "email_002",
+      "category": "DELIVERY",
+      "similarity": 0.1053,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 3.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.675,
+      "overall": 0.5041,
+      "rationale": "The reply provides a vague timeframe and doesn't directly ask for the tracking number, unlike the reference reply."
+    },
+    {
+      "id": "email_003",
+      "category": "CONTACT",
+      "similarity": 0.0984,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 3.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.675,
+      "overall": 0.502,
+      "rationale": "The reply provides alternative contact methods, but lacks a clear request for additional information to tailor the human agent's assistance."
+    },
+    {
+      "id": "email_004",
+      "category": "CONTACT",
+      "similarity": 0.1806,
+      "rubric": {
+        "helpfulness": 3.0,
+        "correctness": 4.0,
+        "tone": 4.0,
+        "completeness": 3.0
+      },
+      "rubric_score": 0.625,
+      "overall": 0.4917,
+      "rationale": "The reply does not directly address the customer's confusion about initiating a chat, but instead asks for more information, which may not be necessary for resolving the issue."
+    },
+    {
+      "id": "email_005",
+      "category": "SUBSCRIPTION",
+      "similarity": 0.1768,
+      "rubric": {
+        "helpfulness": 3.0,
+        "correctness": 4.0,
+        "tone": 4.0,
+        "completeness": 2.0
+      },
+      "rubric_score": 0.575,
+      "overall": 0.4555,
+      "rationale": "The reply does not provide a clear next step or direct the customer to the subscription process, but it does not contain any inaccuracies or contradictions."
+    },
+    {
+      "id": "email_006",
+      "category": "PAYMENT",
+      "similarity": 0.3248,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 4.0,
+        "completeness": 3.0
+      },
+      "rubric_score": 0.7,
+      "overall": 0.5874,
+      "rationale": "The draft reply provides accurate information but lacks a clear next step and omits some payment options mentioned in the reference reply."
+    },
+    {
+      "id": "email_007",
+      "category": "GENERAL",
+      "similarity": 0.3254,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 0.925,
+      "overall": 0.7451,
+      "rationale": "The drafted reply provides accurate and relevant information, but lacks specificity about the interest rates, which is a minor drawback."
+    },
+    {
+      "id": "email_008",
+      "category": "CONTACT",
+      "similarity": 0.1301,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.6515,
+      "rationale": "The drafted reply provides a clear next step and offers multiple communication channels, but doesn't explicitly state the hours of operation or availability of the support team."
+    },
+    {
+      "id": "email_009",
+      "category": "GENERAL",
+      "similarity": 0.0423,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 2.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.65,
+      "overall": 0.4677,
+      "rationale": "The reply provides helpful information but contradicts the reference reply by offering a specific sale date and details, whereas the reference reply asks for the customer's email address to be kept updated."
+    },
+    {
+      "id": "email_010",
+      "category": "GENERAL",
+      "similarity": 0.5657,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 0.85,
+      "overall": 0.7647,
+      "rationale": "The reply provides a clear next step and offers gift wrapping services, but incorrectly mentions a flat fee without specifying it's optional or not."
+    },
+    {
+      "id": "email_011",
+      "category": "INVOICE",
+      "similarity": 0.3741,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.8,
+      "overall": 0.6722,
+      "rationale": "The draft reply provides accurate steps to download the invoice, but lacks the specific mention of a 'Download' button or link, and asks for account login email unnecessarily."
+    },
+    {
+      "id": "email_012",
+      "category": "ORDER",
+      "similarity": 0.4129,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.7364,
+      "rationale": "The drafted reply effectively asks for necessary information to proceed, but lacks a clear next step or indication of what happens after the order number is provided."
+    },
+    {
+      "id": "email_013",
+      "category": "REFUND",
+      "similarity": 0.2723,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.6942,
+      "rationale": "The drafted reply effectively requests necessary information from the customer, but lacks a clear explanation of the process and potential next steps."
+    },
+    {
+      "id": "email_014",
+      "category": "FEEDBACK",
+      "similarity": 0.4051,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.8,
+      "overall": 0.6815,
+      "rationale": "The draft reply provides a clear method for sending feedback, but doesn't explicitly mention the website as an alternative access point."
+    },
+    {
+      "id": "email_015",
+      "category": "SHIPPING",
+      "similarity": 0.5315,
+      "rubric": {
+        "helpfulness": 5.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 1.0,
+      "overall": 0.8595,
+      "rationale": "The drafted reply effectively requests necessary information from the customer, mirrors the reference reply's structure, and maintains a professional tone, but lacks a clear expression of customer satisfaction and support."
+    },
+    {
+      "id": "email_016",
+      "category": "ACCOUNT",
+      "similarity": 0.3444,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 4.0,
+        "completeness": 3.0
+      },
+      "rubric_score": 0.7,
+      "overall": 0.5933,
+      "rationale": "The draft reply is mostly helpful and accurate, but lacks a clear next step and omits the request for a preferred username."
+    },
+    {
+      "id": "email_017",
+      "category": "REFUND",
+      "similarity": 0.1199,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.75,
+      "overall": 0.561,
+      "rationale": "The reply resolves the customer's request, but lacks a clear expression of appreciation for their patience and doesn't fully match the tone of the reference reply."
+    },
+    {
+      "id": "email_018",
+      "category": "ACCOUNT",
+      "similarity": 0.3018,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 3.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.675,
+      "overall": 0.563,
+      "rationale": "The draft reply provides a clear next step, but it contradicts the reference reply by not asking for the customer's full name and email address before proceeding with the upgrade process."
+    },
+    {
+      "id": "email_019",
+      "category": "FEEDBACK",
+      "similarity": 0.263,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.8,
+      "overall": 0.6389,
+      "rationale": "The draft reply provides a clear next step and acknowledges the customer's concern, but lacks specific details on the complaint process and resolution timeline."
+    },
+    {
+      "id": "email_020",
+      "category": "FEEDBACK",
+      "similarity": 0.259,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.825,
+      "overall": 0.6552,
+      "rationale": "The drafted reply provides a clear next step and accurate information, but lacks a warm and personalized tone compared to the reference reply."
+    },
+    {
+      "id": "email_021",
+      "category": "INVOICE",
+      "similarity": 0.1767,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.6655,
+      "rationale": "The draft reply effectively addresses the customer's request, but lacks a clear next step or offer to escalate the issue if the customer is still unable to find the invoices."
+    },
+    {
+      "id": "email_022",
+      "category": "CANCEL",
+      "similarity": 0.342,
+      "rubric": {
+        "helpfulness": 5.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 1.0,
+      "overall": 0.8026,
+      "rationale": "The drafted reply effectively addresses the customer's request, provides accurate information, and maintains a professional tone while ensuring a clear next step."
+    },
+    {
+      "id": "email_023",
+      "category": "DELIVERY",
+      "similarity": 0.1775,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.825,
+      "overall": 0.6307,
+      "rationale": "The reply provides accurate and clear instructions, but lacks the engaging tone and additional information found in the reference reply."
+    },
+    {
+      "id": "email_024",
+      "category": "ORDER",
+      "similarity": 0.3543,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.7188,
+      "rationale": "The drafted reply effectively asks for necessary information to proceed, but lacks a clear expression of enthusiasm and assistance as seen in the reference reply."
+    },
+    {
+      "id": "email_025",
+      "category": "SHIPPING",
+      "similarity": 0.2355,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.6831,
+      "rationale": "The draft reply effectively addresses the customer's issue, but lacks a clear next step beyond requesting order details."
+    },
+    {
+      "id": "email_026",
+      "category": "PAYMENT",
+      "similarity": 0.0217,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 0.925,
+      "overall": 0.654,
+      "rationale": "The reply provides accurate and helpful information, but doesn't ask for the customer's email address as the reference reply does."
+    },
+    {
+      "id": "email_027",
+      "category": "PAYMENT",
+      "similarity": 0.4123,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 3.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.725,
+      "overall": 0.6312,
+      "rationale": "The draft reply provides a list of payment modalities but includes an additional option (cryptocurrency) not mentioned in the reference reply, which slightly reduces its correctness score."
+    },
+    {
+      "id": "email_028",
+      "category": "SHIPPING",
+      "similarity": 0.3123,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.7062,
+      "rationale": "The draft reply provides a clear next step and is accurate, but it doesn't fully match the reference reply's phrasing and doesn't explicitly mention 'select orders'."
+    },
+    {
+      "id": "email_029",
+      "category": "ORDER",
+      "similarity": 0.3157,
+      "rubric": {
+        "helpfulness": 5.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 1.0,
+      "overall": 0.7947,
+      "rationale": "The drafted reply accurately and clearly requests the necessary information to proceed with the customer's request, mirroring the reference reply's approach and language."
+    },
+    {
+      "id": "email_030",
+      "category": "CANCEL",
+      "similarity": 0.2091,
+      "rubric": {
+        "helpfulness": 3.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.8,
+      "overall": 0.6227,
+      "rationale": "The reply asks for necessary information but doesn't provide any guidance on how to check cancellation charges."
+    },
+    {
+      "id": "email_031",
+      "category": "DELIVERY",
+      "similarity": 0.2336,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.6826,
+      "rationale": "The drafted reply is mostly accurate and helpful, but lacks the specific tracking number reference present in the reference reply."
+    },
+    {
+      "id": "email_032",
+      "category": "CANCEL",
+      "similarity": 0.2217,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 0.925,
+      "overall": 0.714,
+      "rationale": "The drafted reply provides a clear next step and accurate information, but doesn't directly ask for the contract details as the reference reply does."
+    },
+    {
+      "id": "email_033",
+      "category": "REFUND",
+      "similarity": 0.2836,
+      "rubric": {
+        "helpfulness": 3.0,
+        "correctness": 5.0,
+        "tone": 4.0,
+        "completeness": 2.0
+      },
+      "rubric_score": 0.65,
+      "overall": 0.5401,
+      "rationale": "The reply acknowledges the customer's request but fails to provide clear guidance or next steps, instead asking for more information."
+    },
+    {
+      "id": "email_034",
+      "category": "SUBSCRIPTION",
+      "similarity": 0.24,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 3.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.675,
+      "overall": 0.5445,
+      "rationale": "The draft reply effectively cancels the subscription but lacks the reference reply's assurance of privacy and prompt handling."
+    },
+    {
+      "id": "email_035",
+      "category": "ACCOUNT",
+      "similarity": 0.5722,
+      "rubric": {
+        "helpfulness": 5.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 5.0
+      },
+      "rubric_score": 0.925,
+      "overall": 0.8191,
+      "rationale": "The draft reply provides accurate and clear steps for deleting a gold account, but slightly deviates from the reference reply in account management section terminology."
+    },
+    {
+      "id": "email_036",
+      "category": "SHIPPING",
+      "similarity": 0.1782,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 5.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.875,
+      "overall": 0.666,
+      "rationale": "The reply asks for necessary details but doesn't explicitly offer to edit the address or provide a clear next step."
+    },
+    {
+      "id": "email_037",
+      "category": "PAYMENT",
+      "similarity": 0.3798,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.8,
+      "overall": 0.6739,
+      "rationale": "The draft reply provides a clear list of payment modalities, but lacks cryptocurrency and e-wallets, and does not offer a comprehensive list like the reference reply."
+    },
+    {
+      "id": "email_038",
+      "category": "SUBSCRIPTION",
+      "similarity": 0.1472,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 4.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.75,
+      "overall": 0.5691,
+      "rationale": "The reply provides a clear next step, but lacks a personal touch and direct assistance in obtaining the customer's email address."
+    },
+    {
+      "id": "email_039",
+      "category": "ORDER",
+      "similarity": 0.1604,
+      "rubric": {
+        "helpfulness": 4.0,
+        "correctness": 4.0,
+        "tone": 5.0,
+        "completeness": 4.0
+      },
+      "rubric_score": 0.8,
+      "overall": 0.6081,
+      "rationale": "The draft reply is mostly accurate and helpful, but it doesn't fully match the reference reply's request for account details or other associated information."
+    }
+  ]
+}

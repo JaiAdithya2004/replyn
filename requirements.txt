@@ -1,0 +1,3 @@
+# Python deps for the Vercel serverless functions in api/.
+# Only `requests` is needed at runtime — everything else is Python stdlib.
+requests>=2.31.0

@@ -1,0 +1,27 @@
+# Downloaded raw datasets (large; re-fetched by eval/generate_dataset.py)
+eval/bitext_customer_support.csv
+eval/kaludi_customer_support.csv
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets — NEVER commit
+.env
+
+# Logs / temp
+*_serverlog.txt
+eval/_*.log
+eval/*.partial
+
+# Local editor / tool settings (not part of the project)
+.claude/
+.vscode/
+.idea/
+.DS_Store
+
+# NOTE: dataset.json, generated_replies.json, evaluation.json, and
+# metric_validation.json ARE committed on purpose — they let a grader see real
+# sample outputs without needing to run the pipeline or set up API keys.

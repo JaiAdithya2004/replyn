@@ -1,0 +1,358 @@
+{
+  "model": "meta-llama/llama-3.3-70b-instruct:free",
+  "grounding": "few-shot retrieval over dataset (leakage-guarded)",
+  "count": 39,
+  "results": [
+    {
+      "id": "email_001",
+      "category": "INVOICE",
+      "intent": "check_invoice",
+      "customer_email": "how can I find my bill from Alex?",
+      "reference_reply": "I understand your need to locate your bill from Salutation . Rest assured, I'm here to assist you in finding the information you seek. To help you with this, could you please provide me with any additional details such as the date range of the bill or any specific keywords related to the bill? With this information, I can narrow down the search and provide you with the most accurate results.",
+      "generated_reply": "I understand you're looking to access your bill from Alex. To retrieve your bill, I can assist you in locating it. Please allow me a moment to check on the status of your bill. In the meantime, can you please confirm the email address associated with your account so I can ensure I'm looking at the correct information?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_002",
+      "category": "DELIVERY",
+      "intent": "delivery_period",
+      "customer_email": "want assistance checking how soon can i expect the delivery",
+      "reference_reply": "We understand how important it is for you to receive your delivery as soon as possible. Can you please provide us with the Tracking Number or #A1029384? This way, we can check the current status of your shipment and give you an accurate estimate of when you can expect the delivery. Your patience is greatly appreciated as we work towards resolving your query. How has your experience been with us so far?",
+      "generated_reply": "We appreciate your message. To help you with checking on the expected delivery time, I've located your order details. According to our system, your order is currently being processed and you can expect to receive it within the next 3-5 business days. To get a more precise delivery estimate, can you please confirm your order number so I can look into the shipping details further?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_003",
+      "category": "CONTACT",
+      "intent": "contact_human_agent",
+      "customer_email": "I want assistance to speak with a human agent",
+      "reference_reply": "We appreciate your message! It's clear to me that you are seeking assistance to speak with a human agent. Rest assured, I am here to help! To connect with a human agent, please provide me with some more information about your query or concern. This will enable me to guide you more effectively and ensure that the human agent addresses your specific needs. Your cooperation is greatly appreciated, and we are committed to providing you with the best possible support. Together, we will find a solution tailored to your requirements.",
+      "generated_reply": "Thank you for reaching out! I understand you'd like to speak with a human agent. To connect with a live representative, you can call our dedicated support line at 1-800-XXX-XXXX, available 24/7. Alternatively, you can also click on the chat icon on our website or app to initiate a live chat. Which method of contact would you prefer to proceed with?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_004",
+      "category": "CONTACT",
+      "intent": "contact_human_agent",
+      "customer_email": "I do not know what I have to do to chat with a human agent",
+      "reference_reply": "Thank you for reaching out! I understand your uncertainty about how to initiate a chat with a human agent. Don't worry, I'm here to guide you through the process. To chat with a human agent, simply click on the chat icon on our website or app. This will open a chat window where you can type your query and interact with a live representative. Rest assured, our agents are well-equipped to assist you with your concerns. Feel free to ask any questions you may have. We'll be glad to help you out!",
+      "generated_reply": "We appreciate your message and are here to help you get in touch with a human agent. To connect with a human agent, please provide me with some more information about your query or concern, such as the topic you'd like to discuss or any specific issues you're experiencing. This will enable me to guide you more effectively and ensure that the human agent addresses your specific needs. What is the main reason you would like to speak with a human agent today?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_005",
+      "category": "SUBSCRIPTION",
+      "intent": "newsletter_subscription",
+      "customer_email": "help me subscribe to your newsletter",
+      "reference_reply": "I appreciate your request for assistance in subscribing to our newsletter! I'm here to guide you through the process and ensure you start receiving our informative and engaging content. To subscribe, please visit our website and look for the Newsletter section. Once you find it, simply fill in the required fields, such as your name and email address, and click on the subscribe button. Rest assured, your privacy is our utmost priority, and we handle your information with the highest level of security. If you encounter any difficulties or have any questions along the way, feel free to reach out to our customer support team, who will be more than happy to assist you. We're excited to have you join our community of subscribers and keep you updated on all things related to our brand!",
+      "generated_reply": "Thank you for your interest in subscribing to our newsletter. We're excited to have you join our community and stay updated on the latest news and updates. To complete your subscription, could you please provide me with the email address you'd like to use for receiving our newsletter?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_006",
+      "category": "PAYMENT",
+      "intent": "check_payment_methods",
+      "customer_email": "I want to check what payment options you accept",
+      "reference_reply": "Absolutely! I understand that you would like to explore the payment options we accept. It's essential to have a seamless and secure payment experience, and we've curated a wide range of options to cater to your preferences. Here is a consolidated list of our accepted payment methods: - **Credit/Debit Cards:** We accept major cards like Visa, Mastercard, and American Express. - **PayPal:** A global online payment platform that offers a convenient and secure way to make payments. - **Bank Transfer:** You can make direct payments from your bank account using this method. - **Digital Wallets:** We support popular digital wallets like Apple Pay and Google Pay for swift transactions. It's important to note that availability may vary depending on your location. If you need more information about a specific payment method or need assistance with any step during the payment process, please don't hesitate to reach out. We're here to ensure a smooth and effortless payment experience for you.",
+      "generated_reply": "We appreciate your interest in our services. We currently accept a variety of payment options, including major credit cards such as Visa, Mastercard, and American Express, as well as PayPal and bank transfers. For a full list of accepted payment methods, you can visit our website's payment section or refer to your order confirmation email. What is your preferred payment method for your current or upcoming order?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_007",
+      "category": "GENERAL",
+      "intent": "",
+      "customer_email": "Do you offer financing options?",
+      "reference_reply": "We do offer financing options for select purchases. Can you please provide the product name or SKU and your email address so we can send you more information?",
+      "generated_reply": "We do offer financing options for eligible purchases. Our financing options include monthly payment plans with varying interest rates. To see if your purchase qualifies, can you please provide the product name or SKU and the total amount of your intended purchase?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_008",
+      "category": "CONTACT",
+      "intent": "contact_customer_service",
+      "customer_email": "I need to talk to customer support, how do I do it?",
+      "reference_reply": "Thank you for contacting! I certainly recognize that you need assistance and would like to talk to our customer support team. You can easily connect with our customer support by contact_method. Our team is available Mon-Fri, 9am-6pm ET to assist you with any questions or concerns you may have. Please don't hesitate to reach out, as we are here to help you. Feel free to ask any further questions or share any additional information you may need.",
+      "generated_reply": "I'm happy to help you get in touch with our customer support team. You've already taken the first step by reaching out to us via email. If you'd prefer to speak with someone directly, you can also contact us through our live chat feature on our website or by calling our dedicated support phone number, which can be found in the 'Contact Us' section of our website. What would be your preferred method of communication to discuss your query further?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_009",
+      "category": "GENERAL",
+      "intent": "",
+      "customer_email": "Do you have any upcoming sales or events?",
+      "reference_reply": "We'd be happy to inform you of any upcoming sales or events. Can you please provide your email address so we can keep you updated?",
+      "generated_reply": "Thank you for reaching out to us. We currently have a summer sale planned, which will start on June 15th and run through June 30th, offering discounts of up to 20% on select items. We also have a loyalty program that provides exclusive early access to sales and events for our members. Would you like me to send you a reminder about the summer sale and information on how to join our loyalty program?",
+      "grounding_examples_used": 0
+    },
+    {
+      "id": "email_010",
+      "category": "GENERAL",
+      "intent": "",
+      "customer_email": "Do you offer gift wrapping?",
+      "reference_reply": "We do offer gift wrapping for select items. Can you please provide the product name or SKU so we can confirm if gift wrapping is available?",
+      "generated_reply": "We do offer gift wrapping services for select products. For a flat fee of $5, we can beautifully wrap your gift and include a personalized message. Can you please provide the product name or SKU you're interested in so we can check if gift wrapping is available for that item? \n\nSupport",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_011",
+      "category": "INVOICE",
+      "intent": "get_invoice",
+      "customer_email": "I don't know what I need to do to download my invoice #12588",
+      "reference_reply": "I'm with you, your uncertainty about how to download your invoice with the number ##INV-5567. Don't worry, I'm here to help you with that. To download your invoice, you can follow these simple steps: 1. Log in to your account on our website. 2. Navigate to the \"Billing\" or \"Invoices\" section. 3. Look for the invoice with the number ##INV-5567. 4. Click on the \"Download\" button or link next to the invoice. 5. The invoice will be saved to your device as a PDF file. If you encounter any difficulties or have further questions, please let me know. I'll be happy to assist you further.",
+      "generated_reply": "Thank you for reaching out! I understand you're having trouble downloading your invoice #12588. To download your invoice, simply log in to your account on our website, navigate to the \"Orders\" or \"Invoices\" section, and click on the invoice number #12588. You will then see an option to view or download the invoice in a PDF format. If you're still having issues, can you please confirm your account login email so I can further assist you?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_012",
+      "category": "ORDER",
+      "intent": "",
+      "customer_email": "Can I change the size of an item in my order?",
+      "reference_reply": "Certainly. Can you please provide your order number and the details of the item you'd like to change?",
+      "generated_reply": "I understand you'd like to make an adjustment to your order. To assist you with changing the size of an item, I'll need to look into the details of your order. Could you please provide me with your order number so I can check on the status and availability of the item in the desired size?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_013",
+      "category": "REFUND",
+      "intent": "get_refund",
+      "customer_email": "could you help me to request a restitution of my money?",
+      "reference_reply": "I acknowledge that you're seeking help to request a restitution of your money. Rest assured, I'm here to guide you through this process and ensure your concerns are addressed. To proceed, could you please provide me with more details about the situation? Specifically, any relevant information about your purchase, such as the order number or transaction details, will enable me to provide more accurate assistance. With that information, I'll be able to advise you on the necessary steps to request the restitution and help you navigate any potential challenges.",
+      "generated_reply": "Thank you for reaching out to us for assistance with requesting a restitution of your money. I'm here to help you with this process. To proceed, could you please provide me with your order number and a brief description of the reason for the requested restitution, so I can look into this matter further and guide you on the next steps to take?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_014",
+      "category": "FEEDBACK",
+      "intent": "review",
+      "customer_email": "is there a method to send some feedback about your products?",
+      "reference_reply": "Thank you for your interest in providing feedback about our products! We have a dedicated feedback system in place that allows you to share your thoughts and opinions with us. You can visit our website and navigate to the \"Feedback\" section, where you can submit your feedback about our products. We appreciate your valuable insights as they help us improve and better serve you. If you have any specific questions or need further assistance with the feedback process, please feel free to let me know.",
+      "generated_reply": "We appreciate your interest in sharing your thoughts about our products. Your feedback is invaluable to us as we continually work to enhance and expand our offerings. To send your feedback, you can use our dedicated feedback form, which can be accessed through your account dashboard under the 'Support' section. Alternatively, you can also reply to this email with your feedback, and we will ensure it reaches the appropriate team. What specific aspect of our products would you like to provide feedback on?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_015",
+      "category": "SHIPPING",
+      "intent": "set_up_shipping_address",
+      "customer_email": "I cannot submit a shipping address",
+      "reference_reply": "I'm cognizant of the fact that you're having difficulty submitting a shipping address. I apologize for any inconvenience this may have caused. To better assist you, could you please provide more details about the issue you're experiencing? Are you encountering any error messages or is the submit button not working? Once I have a better understanding of the problem, I'll be able to provide you with the appropriate solution. Your satisfaction is important to us, and we're here to help you every step of the way.",
+      "generated_reply": "We apologize for the inconvenience. To assist you with submitting a shipping address, could you please provide us with more details about the issue you're experiencing, such as any error messages you're seeing, so we can better understand and help resolve the problem?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_016",
+      "category": "ACCOUNT",
+      "intent": "create_account",
+      "customer_email": "create new Premium account for daughter",
+      "reference_reply": "Oh, how wonderful! I'm ecstatic to assist you in creating a new Premium account for your daughter. This is an excellent choice, and I'll guide you through the process step by step. To get started, could you please provide your daughter's full name, email address, and a preferred username? Once I have these details, we'll proceed to set up her Premium account and ensure she enjoys all the exclusive benefits it offers. Rest assured that her information will remain completely secure and confidential with us. Feel free to ask any questions or share any concerns you may have along the way. How does that sound?",
+      "generated_reply": "I'd be happy to help you create a new Premium account for your daughter. To get started, could you please provide me with her full name and the email address she would like to use for the account? This will help us set up her Premium account accurately and ensure she can access all the exclusive benefits. What is her date of birth, so we can tailor the account settings to her needs?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_017",
+      "category": "REFUND",
+      "intent": "track_refund",
+      "customer_email": "I'm waiting for a compensation of $$29.00",
+      "reference_reply": "Thank you for bringing up your anticipation regarding the compensation of $$29.00. I completely understand how important this reimbursement is to you. Rest assured, we are committed to resolving this matter swiftly and ensuring your satisfaction. Let me quickly check the current status of your compensation. As I gather the information, please feel free to share any specific details or concerns you may have regarding your reimbursement. Your insights are valuable to us, and we appreciate your patience while we work towards a resolution.",
+      "generated_reply": "Thank you for reaching out to us about the pending compensation. I've checked on the status of your compensation, and I'm happy to inform you that we have processed the refund of $29.00. You should receive an email with the refund details shortly. Can you please confirm if you have received the refund email or if you would like me to look into this further? \n\nSupport",
+      "grounding_examples_used": 0
+    },
+    {
+      "id": "email_018",
+      "category": "ACCOUNT",
+      "intent": "create_account",
+      "customer_email": "I would like to create a pro account, how do I do it?",
+      "reference_reply": "That's fantastic! I'm thrilled to assist you in creating a pro account. Let's get started. To begin, could you please provide me with your full name, email address, and a username you would like to use? This will help us set up your account accurately. Once we have these details, I'll guide you through the process step by step, ensuring you have all the information you need. Rest assured, your security and privacy are our top priorities, and your data will be handled with utmost care. Let's create your pro account and unlock a world of exclusive benefits together!",
+      "generated_reply": "I'm excited to help you upgrade to a Pro account. Creating a Pro account is a straightforward process that will unlock exclusive features and benefits for you. To get started, simply log in to your existing account on our website, then click on the \"Upgrade\" button located in the account settings or dashboard section. From there, select the Pro account option and follow the prompts to complete the upgrade process. If you have any questions or need assistance during the upgrade, please don't hesitate to reach out. What is your current account username or email address, so I can ensure a smooth transition to your new Pro account? \n\nSupport",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_019",
+      "category": "FEEDBACK",
+      "intent": "complaint",
+      "customer_email": "how to make a complaint against your organization?",
+      "reference_reply": "I acknowledge that you're seeking information on how to make a complaint against our organization. Making a complaint is an important step towards resolving any concerns or issues you may have. To ensure that your complaint is properly addressed, I recommend following these steps: 1. Gather Information: Before making a complaint, gather all relevant details, including the nature of the issue, any supporting evidence, and details of any interactions related to the problem. 2. Contact Customer Support: Reach out to our dedicated customer support team either through email, phone, or live chat. They will guide you through the process and provide you with the necessary assistance to file your complaint. 3. Provide Detailed Information: Clearly explain the reason for your complaint, providing specific details and supporting evidence where applicable. The more information you provide, the better we can understand and investigate the issue. 4. Escalate if Needed: If you feel that your initial complaint has not been adequately addressed, you may request to escalate the matter to a supervisor or manager. This will ensure that your concerns are given the utmost attention. 5. Follow Up: After filing your complaint, it's essential to follow up to check on the progress of the investigation. This demonstrates your commitment to resolving the issue and allows us to keep you informed of any developments or resolutions. Please be assured that we take every complaint seriously and are committed to resolving them in a fair and timely manner. Our goal is to provide you with the best possible resolution and improve our services based on your feedback. Thank you for bringing your concerns to our attention.",
+      "generated_reply": "I appreciate you reaching out to us about your concern and I'm here to guide you through the process of filing a complaint. To ensure that your issue is addressed promptly and fairly, I recommend that you visit our website and navigate to the 'Contact Us' section, where you'll find a dedicated form for submitting complaints. Alternatively, you can also contact our customer support team directly via phone or email, and we'll be happy to assist you in lodging your complaint and provide you with a unique reference number for your case. What is the nature of your complaint, so I can direct you to the most appropriate channel for a swift resolution?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_020",
+      "category": "FEEDBACK",
+      "intent": "review",
+      "customer_email": "need assistance to send feedback about your services",
+      "reference_reply": "We genuinely appreciate your willingness to provide feedback on our services. Your insights are incredibly valuable to us as we continuously strive to improve and offer the best experience possible. I'd be more than happy to assist you with the process of sending your feedback. Please let me know if you have any specific questions or if there's anything particular you'd like guidance on. Together, we can ensure your feedback reaches the right channels and contributes to our ongoing growth and enhancement.",
+      "generated_reply": "Thank you for your interest in providing feedback about our services. We value your opinion and would be happy to hear about your experience with us. To submit your feedback, you can visit our website and click on the \"Contact Us\" page, where you will find a feedback form that you can fill out and submit directly to our team. Alternatively, you can also reply to this email with your feedback and we will ensure that it is reviewed and taken into consideration. What specific aspect of our services would you like to provide feedback on?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_021",
+      "category": "INVOICE",
+      "intent": "get_invoice",
+      "customer_email": "getting invoices from Alex",
+      "reference_reply": "I understand your need to access the invoices from Salutation . Let me assist you with that. Please give me a moment to retrieve the invoices for you. In the meantime, is there anything else I can help you with?",
+      "generated_reply": "I understand you're looking to obtain invoices from Alex. To assist you with this, I've checked on our system and found that invoices are typically sent to the email address associated with your account. If you're unable to find them in your inbox, I can try to resend the invoices to you. Could you please confirm the email address where you would like the invoices to be sent?",
+      "grounding_examples_used": 1
+    },
+    {
+      "id": "email_022",
+      "category": "CANCEL",
+      "intent": "check_cancellation_fee",
+      "customer_email": "i want assistance to check the termination penalty",
+      "reference_reply": "Assuredly! To help you with checking the termination penalty, please provide me with your account details and I will look into it for you.",
+      "generated_reply": "I appreciate your message and understand that you're looking to inquire about the termination penalty. To assist you with this, I'll need to review the specifics of your account and the terms associated with it. Could you please provide me with your account number or the order number related to the service you wish to terminate, so I can look into the details and provide you with accurate information regarding any potential termination penalties?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_023",
+      "category": "DELIVERY",
+      "intent": "delivery_options",
+      "customer_email": "help me see the options for shipping",
+      "reference_reply": "I'm on it! Let's embark on a journey to explore the delightful spectrum of shipping options available to you: 1. Standard Shipping: Immerse yourself in the joys of anticipation, with estimated delivery within 3-5 business days business days. A perfect choice for those who appreciate a leisurely pace. 2. Expedited Shipping: If time is of the essence, this swift option guarantees delivery within 3-5 business days business days. Ideal for urgent needs that can't wait. 3. Overnight Shipping: Embrace the bliss of instant gratification with next-day delivery. For those moments when time really is of the essence. 4. In-Store Pickup: Enjoy the convenience and personal touch of collecting your items directly from our your nearest store. Perfect for those who prefer a local touch. Feel free to explore these options and let me know if you have any questions or if there's anything else I can assist you with. Your satisfaction is our top priority!",
+      "generated_reply": "I'd be happy to assist you with exploring our shipping options. To view the available shipping methods for your order, please log in to your account and navigate to the 'My Orders' section. From there, select the specific order you're interested in, and click on 'Edit' next to the shipping address. You'll then see a dropdown menu with the various shipping options and their corresponding estimated delivery times and costs. Which shipping method are you considering for your order?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_024",
+      "category": "ORDER",
+      "intent": "place_order",
+      "customer_email": "I want to acquire a product",
+      "reference_reply": "Thank you for considering our products! I'm delighted to assist you in acquiring the product you desire. To ensure a smooth and satisfying experience, could you please provide more details about the specific product you're interested in? Any additional information such as features, specifications, or your preferences will help me to better guide you in making the right choice.",
+      "generated_reply": "I'm happy to help you with acquiring a product. To better assist you, could you please provide me with the name or product code of the item you're interested in? This will allow me to check its availability and provide you with more information on how to proceed with your purchase.",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_025",
+      "category": "SHIPPING",
+      "intent": "change_shipping_address",
+      "customer_email": "I entered a wrong shipping address, how do I correct it?",
+      "reference_reply": "We apologize for any inconvenience caused. To correct the shipping address, please contact our customer support team at [phone number] or send an email to [email address]. They will assist you in updating the address and ensuring that your package is delivered to the correct location. Thank you for bringing this to our attention, and we appreciate your understanding.",
+      "generated_reply": "I'm so sorry to hear that you've entered an incorrect shipping address. To correct this, please provide us with your order details, including your order number, and we will assist you in updating the shipping address. What is your order number so we can proceed with the correction?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_026",
+      "category": "PAYMENT",
+      "intent": "",
+      "customer_email": "How do I apply for a store credit card?",
+      "reference_reply": "Thank you for your interest. Can you please provide your email address so we can send you information on how to apply?",
+      "generated_reply": "I'm happy to help you with applying for a store credit card. To initiate the application process, you can visit our website and navigate to the credit card section, where you'll find a link to the online application form. Alternatively, you can visit one of our store locations and speak with a sales associate, who will be able to provide you with an application and guide you through the process. Before we proceed, do you have a preferred method of application, online or in-store?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_027",
+      "category": "PAYMENT",
+      "intent": "check_payment_methods",
+      "customer_email": "I want assistance seeing your available payment modalities",
+      "reference_reply": "Thank you for reaching out! I am here to provide you with assistance in exploring our available payment modalities. At our company, we strive to offer a diverse range of options to cater to our customers' preferences. Here is a list of our accepted payment methods: - **Credit/Debit Card:** We accept all major cards, including Visa, Mastercard, and American Express. - **PayPal:** A widely used and secure online payment platform. - **Bank Transfer:** Make direct payments from your bank account. - **Digital Wallets:** Convenient options like Apple Pay and Google Pay. - **Cash on Delivery:** Pay for your order upon delivery. These are just a few of the options we have available. If you require further information on any of these methods or have any specific questions, feel free to let me know. I am more than happy to help you make an informed decision!",
+      "generated_reply": "I'd be happy to help you with that. We offer a variety of payment modalities to ensure a seamless and secure payment experience. Our accepted payment methods include: \n1. Credit/Debit Cards: Major providers like Visa, Mastercard, and American Express are accepted.\n2. PayPal: A secure online payment platform for easy transactions.\n3. Bank Transfer: Direct transfers from your bank account are also accepted.\n4. Digital Wallets: Apple Pay and Google Pay are supported for swift payments.\n5. Cash on Delivery (COD): Available in select locations, allowing you to pay in cash upon receiving your order.\n6. E-wallets: Various e-wallets like Paytm, Alipay, and WeChat Pay are accepted in specific regions.\n7. Cryptocurrency: Payments made with Bitcoin, Ethereum, and other popular cryptocurrencies are also accepted.\nWhich of these payment modalities would you like to use for your transaction?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_028",
+      "category": "SHIPPING",
+      "intent": "",
+      "customer_email": "Do you offer free shipping?",
+      "reference_reply": "We do offer free shipping on select orders. Can you please provide the product name or SKU and your shipping destination so we can check if your order qualifies?",
+      "generated_reply": "We do offer free standard shipping on orders over $50. To confirm if your order qualifies, can you please tell me the total amount of your current or planned order?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_029",
+      "category": "ORDER",
+      "intent": "change_order",
+      "customer_email": "help me add some articles to purchase #A1029384",
+      "reference_reply": "We appreciate you reaching out to us for assistance with adding articles to your purchase with order number #A1029384. We understand that sometimes you may want to make changes to your order even after it has been placed. To help you with this, could you please provide us with the details of the articles you would like to add? Knowing the specific items you wish to include will allow us to modify your purchase accordingly and ensure your complete satisfaction. Thank you for your cooperation and patience as we work together to meet your needs.",
+      "generated_reply": "I'm happy to help you with adding articles to your existing purchase. To assist you with that, I've located your purchase #A1029384. To add articles, I will need to know the specific items you would like to add. Could you please provide me with the item numbers or descriptions of the articles you wish to include in your purchase?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_030",
+      "category": "CANCEL",
+      "intent": "check_cancellation_fee",
+      "customer_email": "what do i need to do to check the cancellation charges",
+      "reference_reply": "I'll take care of it! To check the cancellation charges, you can follow these steps: 1. Retrieve the terms and conditions document provided with your agreement. 2. Locate the section that pertains to cancellation fees or penalties. 3. Review the information provided to determine the applicable charges. 4. If you have any further questions or need clarification, feel free to reach out to our customer service team. They will be more than happy to assist you.",
+      "generated_reply": "I'd be happy to help you with checking the cancellation charges. To proceed, could you please provide me with your order or contract number so I can look into the details of your agreement and determine the applicable cancellation fees?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_031",
+      "category": "DELIVERY",
+      "intent": "delivery_period",
+      "customer_email": "show me how long it takes for my article to arrive",
+      "reference_reply": "We understand your eagerness to receive your article and your curiosity about the estimated delivery time. To provide you with the most accurate information, could you please provide us with the Tracking Number or #A1029384? With this information, we will be able to determine the expected arrival date and keep you updated on the progress of your shipment. Your patience is greatly appreciated as we work on resolving this for you.",
+      "generated_reply": "I understand you're eager to know the delivery timeframe for your article. To provide you with an accurate estimate, could you please provide me with your order number or the title of the article you're referring to? With this information, I'll be able to check on the status of your order and give you a more precise delivery timeline.",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_032",
+      "category": "CANCEL",
+      "intent": "check_cancellation_fee",
+      "customer_email": "could you help me check hte cancellation penalties?",
+      "reference_reply": "Certainly, I can help you with checking the cancellation penalties. Please provide me with the details of your contract or agreement so that I can assist you further.",
+      "generated_reply": "I'd be happy to help you with that. To check the cancellation penalties, you can review the terms and conditions document provided with your agreement, which outlines the specific fees or charges associated with cancelling your service. If you don't have access to this document, please let me know and I'll be able to provide you with a copy or guide you on how to obtain it. What is your order or agreement number so I can look into this further for you?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_033",
+      "category": "REFUND",
+      "intent": "get_refund",
+      "customer_email": "I do not know how I can obtain a rebate of money",
+      "reference_reply": "I've become conscious that you're unsure of the process to obtain a rebate for the money you spent. I'm here to assist you with that. To initiate the rebate request, you can follow these steps: 1. Locate your original purchase receipt or invoice. This usually contains important information required for the rebate process. 2. Visit our website or contact our customer support team to inquire about the specific rebate policy related to your purchase. They will provide you with detailed instructions and any necessary forms or documentation. 3. Carefully review the rebate requirements and ensure that you meet all the eligibility criteria before proceeding. 4. Complete the rebate form accurately and provide any supporting documentation, such as proof of purchase, as required. 5. Submit the completed form and documentation by the specified deadline. You may need to send it through mail or submit it electronically, depending on the instructions provided. 6. After submitting your request, allow some time for processing. You can reach out to our customer support team to inquire about the estimated processing time if it's not mentioned in the rebate policy. Remember, every step of the way, our customer support team is available to provide guidance and address any concerns you may have throughout the rebate process. We strive to make this experience as smooth as possible for you.",
+      "generated_reply": "I acknowledge that you're seeking help to obtain a rebate of money. Rest assured, I'm here to guide you through this process and ensure your concerns are addressed. To proceed, could you please provide me with more details about the rebate you're referring to, such as the order or transaction it's related to, so I can advise you on the necessary steps to obtain the rebate and help you navigate any potential challenges. What is the order number or approximate date of the transaction for which you're requesting the rebate?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_034",
+      "category": "SUBSCRIPTION",
+      "intent": "newsletter_subscription",
+      "customer_email": "help me cancelling my corporate newsletter subscription",
+      "reference_reply": "Thank you for reaching out to us for assistance with cancelling your corporate newsletter subscription. I understand that circumstances might change, and it's important to be able to adjust your subscription preferences accordingly. To proceed with the cancellation, could you please provide me with the email address associated with your subscription? Rest assured, your request will be handled promptly and your privacy will be respected throughout the process. I'm here to guide you every step of the way and ensure that your newsletter subscription is cancelled successfully.",
+      "generated_reply": "I appreciate your request to cancel your corporate newsletter subscription. To proceed with the cancellation, I've located your subscription details in our system. You can confirm the cancellation by replying to this email with the word \"Confirm\" so I can finalize the process, or if you'd like to discuss any other options or have questions, what is the main reason you'd like to cancel your subscription?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_035",
+      "category": "ACCOUNT",
+      "intent": "delete_account",
+      "customer_email": "I do not know what I have to do to delete a gold account",
+      "reference_reply": "I can relate to the understanding that you're uncertain about the steps to delete a Premium account. Let me guide you through the process to ensure a seamless experience. To delete your Premium account, you can follow these simple steps: 1. Log in to your account on our website. 2. Navigate to the account settings or account management section. 3. Look for the option to manage or delete your account. 4. Select the Premium account you wish to delete. 5. Follow the prompts or instructions provided to confirm the deletion. Remember that deleting your Premium account will result in the loss of all associated data and benefits. If there are any concerns or further assistance needed during the deletion process, please don't hesitate to reach out. We're here to help!",
+      "generated_reply": "Thank you for reaching out. I'm happy to help you with deleting your gold account. To delete your account, please follow these steps: 1. Log in to your account on our website. 2. Navigate to the \"Account Settings\" or \"Profile\" section. 3. Scroll down to the \"Account Management\" or \"Account Actions\" section. 4. Click on the \"Delete Account\" or \"Close Account\" button. 5. Confirm that you want to delete your gold account by clicking \"Yes\" or \"Confirm\" on the prompt. If you have any active subscriptions or pending payments, you may need to resolve these before deleting your account. Can you please confirm that you have reviewed the account deletion process and would like to proceed?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_036",
+      "category": "SHIPPING",
+      "intent": "change_shipping_address",
+      "customer_email": "i have an trouble editing the address",
+      "reference_reply": "We apologize for the inconvenience. Please provide us with your order details and we will assist you in editing the address.",
+      "generated_reply": "I'm so sorry to hear that you're having trouble editing your address. To assist you, could you please provide more details about the issue you're experiencing, such as any error messages you're seeing or the specific steps you're taking when trying to edit the address? This will help me better understand the problem and provide a more accurate solution. What is the exact error message you're encountering when trying to edit your address?",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_037",
+      "category": "PAYMENT",
+      "intent": "check_payment_methods",
+      "customer_email": "need help listing ur payment modalities",
+      "reference_reply": "Definitely! I would be more than happy to provide you with a comprehensive list of our available payment modalities. Here they are: 1. Credit/Debit Card: We accept major credit and debit card providers like Visa, Mastercard, and American Express. 2. PayPal: A widely recognized and secure online payment platform that allows you to make transactions with ease. 3. Bank Transfer: You can conveniently transfer funds directly from your bank account to complete your purchase. 4. Apple Pay: For Apple device users, you can enjoy seamless payments with just a touch or face recognition. 5. Google Pay: Another convenient option for quick and easy payments through your Google account. 6. Cash on Delivery (COD): Available in select locations, this option allows you to pay in cash upon receiving your order. 7. E-wallets: We accept various e-wallets such as Paytm, Alipay, and WeChat Pay, making it convenient for customers in specific regions. 8. Cryptocurrency: If you prefer using digital currencies, we accept payments made with Bitcoin, Ethereum, and other popular cryptocurrencies. These are the primary payment modalities we offer. If you require more detailed information about any specific method or have any other questions, please feel free to let me know. Your satisfaction is our top priority!",
+      "generated_reply": "Thank you for reaching out! I'd be happy to assist you with our available payment options. We accept a variety of payment methods, including **Credit/Debit Cards** (Visa, Mastercard, American Express), **PayPal**, **Bank Transfer**, **Digital Wallets** (Apple Pay, Google Pay), and **Cash on Delivery**. For more detailed information on these options or if you have a specific question about any of them, what payment method are you most interested in learning more about? \nSupport",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_038",
+      "category": "SUBSCRIPTION",
+      "intent": "newsletter_subscription",
+      "customer_email": "want help signing up to the newsletter",
+      "reference_reply": "That's great to hear that you're interested in signing up for our newsletter! We appreciate your eagerness to stay informed and connected. To assist you with the process, may I kindly ask for your email address? Once I have that information, I'll ensure you're subscribed promptly. Rest assured, we value your privacy and will uphold the highest standards in safeguarding your personal information. Thank you for choosing to be a part of our newsletter community!",
+      "generated_reply": "I appreciate your interest in subscribing to our newsletter. To sign up, simply visit our website and navigate to the Newsletter section, where you'll find a subscription form. Please fill in the required fields with your name and email address, and then click the subscribe button. We'll take care of the rest, and you'll start receiving our latest updates and news. What is the email address you would like to use for your newsletter subscription? \n\nSupport",
+      "grounding_examples_used": 2
+    },
+    {
+      "id": "email_039",
+      "category": "ORDER",
+      "intent": "track_order",
+      "customer_email": "wanna locate purchase #A1029384 can i get some help",
+      "reference_reply": "Honored to assist! I'm clued in that you would like to locate your purchase with the purchase number #A1029384 and need some assistance. To help you with that, could you please provide me with your account details or any other information associated with the purchase? With those details, I will be able to guide you on how to locate your purchase swiftly and accurately.",
+      "generated_reply": "We appreciate you reaching out to us for assistance with locating your purchase. I've checked on the status of order #A1029384, and I can provide you with an update. To give you the most accurate information, could you please confirm the email address associated with this order?",
+      "grounding_examples_used": 2
+    }
+  ]
+}
